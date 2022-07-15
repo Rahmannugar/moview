@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #3498db;
+  color: white;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 100%;
+  background-color: #1b2631;
+}
+.title-container img {
+  max-width: 100%;
+  margin-top: 10px;
+  height: 1.8rem;
+}
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+header input {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.3rem;
+}
+header button {
+  margin-left: 0.1rem;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 0.7rem;
+  border-radius: 10%;
+}
+header button:hover {
+  background-color: #1b2631;
+}
+#main {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  width: 9rem;
+  margin: 1rem;
+  position: relative;
+}
+.movie img {
+  max-width: 100%;
+}
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.movie-info h3 {
+  margin: 0;
+}
+.movie-info span {
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  padding: 0.25rem 0.5rem;
+  font-weight: 800;
+}
+.movie-info span.green {
+  color: green;
+}
+.movie-info span.red {
+  color: red;
+}
+.overview {
+  position: absolute;
+  top: 0;
+  padding: 2rem;
+  background-color: white;
+  font-size: 0.6rem;
+  max-height: 100%;
+  overflow: auto;
+  visibility: hidden;
+  color: black;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s ease;
+  right: 0;
+  transform: translateY(100%);
+}
+.synopsis {
+  font-size: 0.5rem;
+}
+.overview h4 {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+a {
+  text-decoration: none;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.btn-container button {
+  font-size: 0.5rem;
+  padding: 5px;
+  margin: 5px;
+}
+.cancel {
+  padding: 1px 7px;
+  margin-bottom: 10px;
+}

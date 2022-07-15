@@ -100,13 +100,13 @@ const getMoviesBySearch = async (term) => {
     //when clicking on synopsis button, it should do the following instruction.
     synopsis.addEventListener("click", () => {
       overviewText.style.visibility = "inherit";
-      overviewText.style.transition = "0.3s ease-in";
+      overviewText.style.transform = "translateY(0)";
     });
 
     //when clicking on cancel button, it should do the following instruction.
     cancel.addEventListener("click", () => {
       overviewText.style.visibility = "hidden";
-      overviewText.style.transition = "0.3s ease-in";
+      overviewText.style.transform = "translateY(100%)";
     });
 
     main.appendChild(movieEl);

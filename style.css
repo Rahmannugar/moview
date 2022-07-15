@@ -40,6 +40,9 @@ header button {
 header button:hover {
   background-color: #1b2631;
 }
+.trending {
+  text-align: center;
+}
 #main {
   justify-content: center;
   display: flex;

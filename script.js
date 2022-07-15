@@ -1,6 +1,7 @@
 //declaring global variables
 const main = document.getElementById("main");
 const searchBtn = document.getElementById("btn");
+const trending = document.querySelector(".trending");
 
 //Api parameters
 const APIKEY = "api_key=04c35731a5ee918f014970082a0088b1&page=1";
@@ -126,4 +127,5 @@ searchBtn.addEventListener("click", () => {
   const searchInput = document.getElementById("search").value;
   getMoviesBySearch(searchInput);
   main.innerHTML = "";
+  trending.textContent = `Search results for "${searchInput}"`;
 });
